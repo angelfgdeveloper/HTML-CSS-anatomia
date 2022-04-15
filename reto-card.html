@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi perfil</title>
+
+  <style>
+    section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-family: sans-serif;
+    }
+
+    .card {
+      width: 500px;
+      height: 450px;
+      background: #0065b8;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .card .background {
+      width: 100%;
+      height: 35%;
+      background: crimson;
+    }
+
+    .card .circle-img {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card .circle-img img {
+      width: 130px;
+      height: 130px;
+      border-radius: 100%;
+      position: absolute;
+      top: -70px;
+    }
+
+    .card p {
+      position: absolute;
+      top: 60px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .card .background-horizontal {
+      width: 100%;
+      height: 60px;
+      background: cornsilk;
+    }
+
+    .card .social-media {
+      width: 100%;
+      position: relative;
+      top: 60px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      box-sizing: border-box;
+    }
+
+    .card .social-media h4 {
+      color: white;
+      justify-self: center;
+    }
+
+    .card .social-media h3 {
+      color: white;
+      justify-self: center;
+    }
+
+    .card .social-media h3:nth-child(2) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    .card .social-media h3:nth-child(4) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    .card .social-media h3:nth-child(6) {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <section>
+    <div class="card">
+      <div class="background"></div>
+      <div class="circle-img">
+        <img
+          src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Imágen de perfil">
+        <p>Luis Angel</p>
+      </div>
+      <div class="background-horizontal"></div>
+      <div class="social-media">
+        <h4>LikedIn</h4>
+        <h3>12K</h3>
+        <h4>Facebook</h4>
+        <h3>1056 personas</h3>
+        <h4>Twitter</h4>
+        <h3>54K Retwittes</h3>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
